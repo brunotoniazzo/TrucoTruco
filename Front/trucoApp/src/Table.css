@@ -1,0 +1,104 @@
+.game-table {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    background: radial-gradient(circle, #1a4a1a 0%, #0d260d 100%);
+    overflow: hidden;
+    z-index: 5;
+}
+
+.opponent-area,
+.player-area {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    height: 180px;
+    align-items: center;
+}
+
+.center-table {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card-slot {
+    width: 100px;
+    height: 150px;
+    border: 2px dashed rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amostra-container {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.amostra-card {
+    width: 90px;
+    height: 130px;
+    background: #fff;
+    border-radius: 8px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border: 3px solid #fcd34d;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    background: white;
+    border-radius: 10px;
+    color: #18181b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card.back {
+    background: linear-gradient(135deg, #4a120f 0%, #220706 100%);
+    border: 2px solid #fcd34d;
+}
+
+.hud {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.score-board {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #fcd34d;
+    color: #fff;
+}

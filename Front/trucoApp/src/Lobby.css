@@ -1,0 +1,42 @@
+.main-lobby {
+    display: flex;
+    gap: 24px;
+    padding: 48px;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    z-index: 2;
+    position: relative;
+}
+
+.lobby-card {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(254, 243, 199, 0.15);
+    padding: 32px;
+    border-radius: 28px;
+    backdrop-filter: blur(12px);
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.lobby-card:hover:not(.locked) {
+    transform: translateY(-10px);
+    border-color: #fcd34d;
+}
+
+.lobby-card h2 {
+    color: #fcd34d;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.lobby-card p {
+    color: #d4d4d8;
+    margin-bottom: 24px;
+}
+
+.locked {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
